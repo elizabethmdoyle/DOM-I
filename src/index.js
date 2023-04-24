@@ -42,9 +42,21 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 console.log('project wired!')
 
 const header = document.querySelector('header');
+header.className.add('header');
+console.log(header)
 const nav = document.querySelector('nav');
 
-const navLinks = document.querySelectorAll('nav a')
-//console.log(navLinks)
+const headerNavLinks = document.querySelectorAll('header nav a')
+console.log(navLinks)
+headerNavLinks.className.add('.italic')
+
+
+//img
 const logoImg = document.querySelector('.logo'); 
 logoImg.src = 'http://localhost:9000/img/logo.png';
+
+const ctaImg = document.querySelector('#cta-img')
+ctaImg.src = "http://localhost:9000/img/cta.png";
+
+const middleImg = document.querySelector('.middle-img');
+middleImg.src = 'http://localhost:9000/img/accent.png';
