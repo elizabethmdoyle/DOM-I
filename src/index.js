@@ -40,3 +40,11 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+const header = document.querySelector('header');
+const nav = document.querySelector('nav');
+
+const navLinks = document.querySelectorAll('nav a')
+//console.log(navLinks)
+const logoImg = document.querySelector('.logo'); 
+logoImg.src = 'http://localhost:9000/img/logo.png';
