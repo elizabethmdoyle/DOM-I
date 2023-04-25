@@ -82,10 +82,10 @@ logoImg.src = siteContent["images"]["logo-img"];
 var ctaDiv = document.querySelector('.cta-text');
 //console.log(ctaDiv.firstElementChild);
 var ctaHeading = ctaDiv.firstElementChild; 
-ctaHeading.textContent = siteContent["cta"]["h1"];
+ctaHeading.textContent = siteContent.cta.h1;
 //console.log(ctaHeading);
 var ctaParagraph = ctaDiv.lastElementChild
-ctaParagraph.textContent = siteContent["cta"]["button"];
+ctaParagraph.textContent = siteContent.cta.button;
 //console.log(ctaParagraph)
 
 // cta image
@@ -115,41 +115,46 @@ aboutParagraph.textContent = siteContent["main-content"]["about-content"];
 var middleImg = document.querySelector('.middle-img');
 middleImg.src = siteContent["images"]["accent-img"];
 
+
+
+//bottom content
+var bottomSection = document.querySelector(".bottom-content");
+const h4sBottomContent = bottomSection.querySelectorAll('h4');
+
+// var bottomContentDiv = bottomSection.firstElementChild;
+// //services section
+// var servicesTitle = bottomContentDiv.firstElementChild;
+// servicesTitle.textContent = siteContent["main-content"]["services-h4"];
+// var servicesParagraph = servicesTitle.nextElementSibling;
+// servicesParagraph.textContent = siteContent["main-content"]["services-content"];
+
+// //product section
+// var productsTitle = document.querySelector(".bottom-content .text-content:nth-of-type(2)");
+// // console.log(productTitle);
+// productsTitle.textContent = siteContent["main-content"]["product-h4"];
+// var productParagraph = productsTitle.nextElementSibling;
+// productParagraph.textContent = siteContent["main-content"]["product-content"];
+// //vision section
+// var bottomContentDiv2 = bottomSection.lastElementChild;
+// var visionTitle = bottomContentDiv2.firstElementChild;
+// visionTitle.textContent = siteContent["main-content"]["vision-h4"];
+// var visionParagraph = visionTitle.nextElementSibling;
+// visionParagraph.textContent = siteContent["main-content"]["vision-content"];
+
 //contact
 var contactSection = document.querySelector(".contact")
 console.log(contactSection)
 var contactTitle = contactSection.firstElementChild;
 contactTitle.textContent = siteContent["contact"]["contact-h4"];
 var contactAddress = contactTitle.nextElementSibling;
-contactAddress.textContent = siteContent["contact"]["address"];
+contactAddress.textContent = siteContent.contact.address;
 var contactPhone = contactAddress.nextElementSibling;
-contactPhone.textContent = siteContent["contact"]["phone"];
+contactPhone.textContent = siteContent.contact.phone;
 var contactEmail = contactPhone.nextElementSibling;
-contactEmail.textContent = siteContent["contact"]["email"];
-
-//bottom content
-var bottomSection = document.querySelector(".bottom-content");
-var bottomContentDiv = bottomSection.firstElementChild;
-//services section
-var servicesTitle = bottomContentDiv.firstElementChild;
-servicesTitle.textContent = siteContent["main-content"]["services-h4"];
-var servicesParagraph = servicesTitle.nextElementSibling;
-servicesParagraph.textContent = siteContent["main-content"]["services-content"];
-
-//product section
-var productTitle = document.querySelector(".bottom-content .text-content:nth-of-type(2)");
-// console.log(productTitle);
-productTitle.textContent = siteContent["main-content"]["product-h4"];
-var productParagraph = productTitle.nextElementSibling;
-productParagraph.textContent = siteContent["main-content"]["product-content"];
-//vision section
-var bottomContentDiv2 = bottomSection.lastElementChild;
-var visionTitle = bottomContentDiv2.firstElementChild;
-visionTitle.textContent = siteContent["main-content"]["vision-h4"];
-var visionParagraph = visionTitle.nextElementSibling;
-visionParagraph.textContent = siteContent["main-content"]["vision-content"];
+contactEmail.textContent = siteContent.contact.email;
 
 //footer
 var footerNavLink = document.querySelector('footer a');
 console.log(footerNavLink);
-footerNavLink.textContent = siteContent["footer"]["copyright"];
+footerNavLink.textContent = siteContent.footer.copyright;
+footerNavLink.classList.add('bold');
