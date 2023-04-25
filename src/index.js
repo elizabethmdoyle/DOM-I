@@ -120,6 +120,13 @@ middleImg.src = siteContent["images"]["accent-img"];
 //bottom content
 var bottomSection = document.querySelector(".bottom-content");
 const h4sBottomContent = bottomSection.querySelectorAll('h4');
+h4sBottomContent[0].textContent = siteContent["main-content"]["services-h4"];
+h4sBottomContent[1].textContent = siteContent["main-content"]["product-h4"];
+h4sBottomContent[2].textContent = siteContent["main-content"]["vision-h4"];
+const psBottomContent  = bottomSection.querySelectorAll('p');
+psBottomContent[0].textContent = siteContent["main-content"]["services-content"];
+psBottomContent[1].textContent = siteContent["main-content"]["product-content"];
+psBottomContent[2].textContent = siteContent["main-content"]["vision-content"];
 
 // var bottomContentDiv = bottomSection.firstElementChild;
 // //services section
