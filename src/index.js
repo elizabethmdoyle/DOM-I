@@ -72,16 +72,6 @@ aboutLink.textContent = siteContent["nav"]["nav-item-5"];
 var contactLink = document.querySelector('header nav a:nth-of-type(6)');
 contactLink.textContent = siteContent["nav"]["nav-item-6"];
 
-
-// var navItem2 = 
-// var navItem3 = 
-// var navItem4 = 
-// var navItem5 = 
-// var navItem6 = 
-
-
-
-
 // logo image
 var logoImg = document.querySelector('.logo');
 // const logoImgAlt = document.querySelector('.logo');
@@ -105,12 +95,25 @@ var ctaImg = document.querySelector('#cta-img')
 ctaImg.src = siteContent["images"]["cta-img"];
 
 // main content
-
-
+ var topContent = document.querySelector('.top-content')
+ //console.log(topContent)
 
 // middle image
 var middleImg = document.querySelector('.middle-img');
 middleImg.src = siteContent["images"]["accent-img"];
+
+//contact
+var contactSection = document.querySelector(".contact")
+console.log(contactSection)
+var contactTitle = contactSection.firstElementChild;
+contactTitle.textContent = siteContent["contact"]["contact-h4"];
+var contactAddress = contactTitle.nextElementSibling;
+contactAddress.textContent = siteContent["contact"]["address"];
+var contactPhone = contactAddress.nextElementSibling;
+contactPhone.textContent = siteContent["contact"]["phone"];
+var contactEmail = contactPhone.nextElementSibling;
+contactEmail.textContent = siteContent["contact"]["email"];
+
 
 //footer
 var footerNavLink = document.querySelector('footer a');
