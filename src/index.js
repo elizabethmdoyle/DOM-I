@@ -39,10 +39,10 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
-console.log('project wired!')
+console.log('project wired!');
 //header 
 var header = document.querySelector('header');
-//console.log(header);
+console.log(header);
 
 //nav
 var nav = document.querySelector('nav');
@@ -86,22 +86,22 @@ ctaHeading.textContent = siteContent["cta"]["h1"];
 //console.log(ctaHeading);
 var ctaParagraph = ctaDiv.lastElementChild
 ctaParagraph.textContent = siteContent["cta"]["button"];
-console.log(ctaParagraph)
+//console.log(ctaParagraph)
 
 // cta image
-var ctaImg = document.querySelector('#cta-img')
+var ctaImg = document.querySelector('#cta-img');
 // const ctaImgAlt = document.querySelector('#cta-img')
 // ctaImgAlt = "Image of a code snippet";
 ctaImg.src = siteContent["images"]["cta-img"];
 
 // main content
- var topContentDiv = document.querySelector('.top-content')
+ var topContentDiv = document.querySelector('.top-content');
  //console.log(topContentDiv)
  var textContentDiv1 = topContentDiv.firstElementChild;
- 
+
  //features section
  var featuresTitle = textContentDiv1.firstElementChild;
- featuresTitle.textContent = siteContent["main-content"]["features-h4"]
+ featuresTitle.textContent = siteContent["main-content"]["features-h4"];
  var featuresParagraph = featuresTitle.nextElementSibling;
  featuresParagraph.textContent = siteContent["main-content"]["features-content"];
 //about section
@@ -110,9 +110,6 @@ var aboutTitle = textContentDiv2.firstElementChild;
 aboutTitle.textContent = siteContent["main-content"]["about-h4"];
 var aboutParagraph = aboutTitle.nextElementSibling;
 aboutParagraph.textContent = siteContent["main-content"]["about-content"];
-
-
-
 
 // middle image
 var middleImg = document.querySelector('.middle-img');
@@ -130,6 +127,27 @@ contactPhone.textContent = siteContent["contact"]["phone"];
 var contactEmail = contactPhone.nextElementSibling;
 contactEmail.textContent = siteContent["contact"]["email"];
 
+//bottom content
+var bottomSection = document.querySelector(".bottom-content");
+var bottomContentDiv = bottomSection.firstElementChild;
+//services section
+var servicesTitle = bottomContentDiv.firstElementChild;
+servicesTitle.textContent = siteContent["main-content"]["services-h4"];
+var servicesParagraph = servicesTitle.nextElementSibling;
+servicesParagraph.textContent = siteContent["main-content"]["services-content"];
+
+//product section
+var productTitle = document.querySelector(".bottom-content .text-content:nth-of-type(2)");
+// console.log(productTitle);
+productTitle.textContent = siteContent["main-content"]["product-h4"];
+var productParagraph = productTitle.nextElementSibling;
+productParagraph.textContent = siteContent["main-content"]["product-content"];
+//vision section
+var bottomContentDiv2 = bottomSection.lastElementChild;
+var visionTitle = bottomContentDiv2.firstElementChild;
+visionTitle.textContent = siteContent["main-content"]["vision-h4"];
+var visionParagraph = visionTitle.nextElementSibling;
+visionParagraph.textContent = siteContent["main-content"]["vision-content"];
 
 //footer
 var footerNavLink = document.querySelector('footer a');
