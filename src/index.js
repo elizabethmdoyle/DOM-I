@@ -40,20 +40,45 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+//header 
+var header = document.querySelector('header');
+console.log(header);
+//nav
+var nav = document.querySelector('nav');
+console.log(nav);
+var headerNavLinks = document.querySelectorAll('header nav a');
+console.log(headerNavLinks)
 
-const header = document.querySelector('header');
 
-const nav = document.querySelector('nav');
-
-const headerNavLinks = document.querySelectorAll('header nav a')
-
-
-//img
-const logoImg = document.querySelector('.logo'); 
+// logo image
+var logoImg = document.querySelector('.logo');
+// const logoImgAlt = document.querySelector('.logo');
+// logoImgAlt.alt = "Great Idea! Company logo";
 logoImg.src = siteContent["images"]["logo-img"];
 
-const ctaImg = document.querySelector('#cta-img')
+// cta section
+var ctaDiv = document.querySelector('.cta-text');
+console.log(ctaDiv.firstElementChild);
+var ctaHeading = ctaDiv.firstElementChild; 
+ctaHeading.textContent = siteContent["cta"]["h1"];
+console.log(ctaHeading);
+var ctaParagraph = ctaDiv.lastElementChild
+ctaParagraph.textContent = siteContent["cta"]["button"];
+console.log(ctaParagraph)
+
+
+// cta image
+var ctaImg = document.querySelector('#cta-img')
+// const ctaImgAlt = document.querySelector('#cta-img')
+// ctaImgAlt = "Image of a code snippet";
 ctaImg.src = siteContent["images"]["cta-img"];
 
-const middleImg = document.querySelector('.middle-img');
+
+// middle image
+var middleImg = document.querySelector('.middle-img');
 middleImg.src = siteContent["images"]["accent-img"];
+
+//footer
+var footerNavLink = document.querySelector('footer a');
+console.log(footerNavLink);
+footerNavLink.textContent = siteContent["footer"]["copyright"];
